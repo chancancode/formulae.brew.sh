@@ -30,4 +30,6 @@ Braumeister::Application.configure do
   }
 
   config.middleware.use Rack::Deflater
+
+  config.skylight.probes += %w(mongo)
 end
